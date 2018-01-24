@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aufgabe 5.1</title>
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href="css/responsiveslides.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <a href="fullsize/full1.jpg" data-lightbox="image"><img src="thumbnails/thb1.png" alt="Thumbnail1"></a>
+      <a href="fullsize/full2.png" data-lightbox="image"><img src="thumbnails/thb2.png" alt="Thumbnail2"></a>
+      <a href="fullsize/full3.jpg" data-lightbox="image"><img src="thumbnails/thb3.png" alt="Thumbnail3"></a>
+      <a href="fullsize/full4.jpg" data-lightbox="image"><img src="thumbnails/thb4.png" alt="Thumbnail4"></a>
+      <a href="fullsize/full5.PNG" data-lightbox="image"><img src="thumbnails/thb5.png" alt="Thumbnail5"></a>
+      <a href="fullsize/full6.jpg" data-lightbox="image"><img src="thumbnails/thb6.png" alt="Thumbnail6"></a>
+      <a href="fullsize/full7.jpg" data-lightbox="image"><img src="thumbnails/thb7.png" alt="Thumbnail7"></a>
+      <a href="fullsize/full8.jpg" data-lightbox="image"><img src="thumbnails/thb8.png" alt="Thumbnail8"></a>
+      <a href="fullsize/full9.jpeg" data-lightbox="image"><img src="thumbnails/thb9.png" alt="Thumbnail9"></a>
+      <ul class="rslides" id="slider1">
+        <li><img src="fullsize/full1.jpg" alt="Thumbnail1"></li>
+        <li><img src="fullsize/full2.png" alt="Thumbnail2"></li>
+        <li><img src="fullsize/full3.jpg" alt="Thumbnail3"></li>
+        <li><img src="fullsize/full4.jpg" alt="Thumbnail4"></li>
+        <li><img src="fullsize/full5.PNG" alt="Thumbnail5"></li>
+        <li><img src="fullsize/full6.jpg" alt="Thumbnail6"></li>
+        <li><img src="fullsize/full7.jpg" alt="Thumbnail7"></li>
+        <li><img src="fullsize/full8.jpg" alt="Thumbnail8"></li>
+        <li><img src="fullsize/full9.jpeg" alt="Thumbnail9"></li>
+      </ul>
+
+      <script src="js/lightbox.js"></script>
+      <script src="js/responsiveslides.js"></script>
+      <script>
+      $(function() {
+        console.log("test");
+        $("#slider1").responsiveSlides({
+          speed: 1000,
+          timeout: 5000
+        });
+      });
+      </script>
+    </body>
+</html>
